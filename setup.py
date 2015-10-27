@@ -1,6 +1,8 @@
 #!/usr/bin/env python
-
-from setuptools import setup
+try:
+    from setuptools.core import setup
+except ImportError:
+    from distutils.core import setup
 
 setup(
     name='mdx_picture',
@@ -9,8 +11,10 @@ setup(
     author_email='speechkey@gmail.com',
     description='Python-Markdown extension supports the <picture> tag.',
     url='http://www.artemgrebenkin.com/',
-    py_modules=['mdx_picture'],
+    packages=['mdx_picture', 'mdx_picture.tests'],
     install_requires=['Markdown>=2.0'],
+    license="MIT License",
+    platforms=['any'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: BSD License',
@@ -19,5 +23,6 @@ setup(
         'Programming Language :: Python',
         'Topic :: Text Processing :: Filters',
         'Topic :: Text Processing :: Markup :: HTML'
-    ]
+    ],
+    test_suite='mdx_picture.tests.get_suite'
 )
