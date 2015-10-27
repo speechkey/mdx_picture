@@ -20,7 +20,7 @@ The `<picture>` was introduced in the [HTML 5.1 draft](http://www.w3.org/html/wg
 
 ## Objective
 
-Implement a markdown extension with a markup for `<picture>` tag. *Attention! The `mdx_picture` doesn't implement any polyfills, so it supports only browsers with native `<picture>` tag support. You should add a polyfill implementation by yourself.*
+Implement a markdown extension with a markup for `<picture>` tag. **Attention! The `mdx_picture` doesn't implement any polyfills, so it supports only browsers with native `<picture>` tag support. You should add a polyfill implementation by yourself.**
 
 ## Install
 
