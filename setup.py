@@ -6,15 +6,17 @@ except ImportError:
 
 setup(
     name='mdx_picture',
-    version='1.0',
+    version='0.1.0',
     author='Artem Grebenkin',
     author_email='speechkey@gmail.com',
     description='Python-Markdown extension supports the <picture> tag.',
-    url='http://www.artemgrebenkin.com/',
+    url='https://github.com/speechkey/mdx_picture',
+    download_url='https://github.com/speechkey/mdx_picture/tarball/0.1.0',
     packages=['mdx_picture', 'mdx_picture.tests'],
     install_requires=['Markdown>=2.0'],
     license="MIT License",
     platforms=['any'],
+    keywords=['markdown', 'picture'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: BSD License',
