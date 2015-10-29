@@ -35,11 +35,13 @@ class PictureProcessor(markdown.blockprocessors.BlockProcessor):
         picture = etree.SubElement(parent, 'picture')
 
         sources = re.findall(self.RE_SOURCE, block)
+        sources.sort(key=lambda x: 0 if x[0] == '' else float(x[0][:-2]),
+                     reverse=True)
 
         for width, src in sources:
             source_node = etree.SubElement(picture, 'source')
             source_node.set('media', '(min-width: ' + width + ')')
-            source_node.set('src', src)
+            source_node.set('srcset', src)
 
         img = self.RE_IMG.search(block)
 

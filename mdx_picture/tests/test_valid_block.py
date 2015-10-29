@@ -44,9 +44,9 @@ Hello World my Babald
 One more time
 """
         sources_html = """<p>Hello World my Babald</p>\n\
-<picture><source media="(min-width: 64em)" src="high-res.jpg"></source>\
-<source media="(min-width: 37.5em)" src="med-res.jpg"></source>\
-<source media="(min-width: 0em)" src="low-res.jpg"></source>\
+<picture><source media="(min-width: 64em)" srcset="high-res.jpg"></source>\
+<source media="(min-width: 37.5em)" srcset="med-res.jpg"></source>\
+<source media="(min-width: 0em)" srcset="low-res.jpg"></source>\
 <img alt="This picture loads on non-supporting browsers." src="image.jpg" \
 title="The image title" /></picture>\
 <p>One more time</p>"""

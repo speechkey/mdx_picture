@@ -9,9 +9,8 @@ The HTML `<picture>` element is a container used to specify multiple `<source>`s
 
 ```html
 <picture>
-	<source srcset="pear-mobile.jpeg" media="(max-width: 720px)">
-	<source srcset="pear-tablet.jpeg" media="(max-width: 1280px)">
-	<source srcset="pear-desktop.jpeg">
+	<source srcset="pear-tablet.jpeg" media="(min-width: 1280px)">
+	<source srcset="pear-mobile.jpeg" media="(min-width: 720px)">
 	<img src="pear-tablet.jpeg" alt="The pear is juicy.">
 </picture>
 ```
@@ -37,8 +36,8 @@ gets converted to
 
 ```html
 <picture>
-	<source srcset="pear-mobile.jpeg" media="(max-width: 720px)">
 	<source srcset="pear-tablet.jpeg" media="(max-width: 1280px)">
+	<source srcset="pear-mobile.jpeg" media="(max-width: 720px)">
 	<img alt="This picture loads on non-supporting browsers." src="image.jpg" title="The image title" />
 </picture>
 ```
