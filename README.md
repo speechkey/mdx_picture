@@ -54,4 +54,4 @@ gets converted to
 
 ## Test
 
-Test extension by `python setup.py test`
+Test pip packet by `python setup.py test` or run test manually by `python -m mdx_picture.tests.__main__`.
