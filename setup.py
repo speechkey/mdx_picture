@@ -11,7 +11,7 @@ setup(
     author_email='speechkey@gmail.com',
     description='Python-Markdown extension supports the <picture> tag.',
     url='https://github.com/speechkey/mdx_picture',
-    download_url='https://github.com/speechkey/mdx_picture/tarball/0.1.1',
+    download_url='https://github.com/speechkey/mdx_picture/tarball/0.1.2',
     packages=['mdx_picture', 'mdx_picture.tests'],
     install_requires=['Markdown>=2.0'],
     license="MIT License",
