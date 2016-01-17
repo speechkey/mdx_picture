@@ -30,6 +30,10 @@ class PictureProcessor(markdown.blockprocessors.BlockProcessor):
         return self.RE.search(block)
 
     def run(self, parent, blocks):
+        # Allow source as empty element
+        from markdown import serializers
+        serializers.HTML_EMPTY.add("source")
+
         block = blocks.pop(0)
 
         picture = etree.SubElement(parent, 'picture')

@@ -6,7 +6,7 @@ except ImportError:
 
 setup(
     name='mdx_picture',
-    version='0.1.1',
+    version='0.1.2',
     author='Artem Grebenkin',
     author_email='speechkey@gmail.com',
     description='Python-Markdown extension supports the <picture> tag.',

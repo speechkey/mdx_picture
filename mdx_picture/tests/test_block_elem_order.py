@@ -36,9 +36,9 @@ One more time
 """
 
         mixed_img_order_html = """<p>Hello World my Babald</p>\n\
-<picture><source media="(min-width: 64em)" srcset="high-res.jpg"></source>\
-<source media="(min-width: 37.5em)" srcset="med-res.jpg"></source>\
-<source media="(min-width: 0em)" srcset="low-res.jpg"></source>\
+<picture><source media="(min-width: 64em)" srcset="high-res.jpg" />\
+<source media="(min-width: 37.5em)" srcset="med-res.jpg" />\
+<source media="(min-width: 0em)" srcset="low-res.jpg" />\
 <img alt="This picture loads on non-supporting browsers." src="image.jpg" \
 title="The image title" /></picture><p>One more time</p>"""
 
